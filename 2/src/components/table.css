@@ -1,0 +1,145 @@
+.header-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-btn {
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+}
+
+.header {
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 40px;
+}
+
+table td,
+table th {
+  border: 1px solid #e3e3e3;
+  /* padding: 8px; */
+}
+
+table tr {
+  height: 178px;
+}
+
+table th {
+  padding: 21px 0px 20px 25px;
+  text-align: left;
+  background-color: #f5f4f7;
+  color: #0b0b0b;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.page-info {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.moves {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: 0;
+  background-color: white;
+  color: #2782ee;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+/* Switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: blue;
+}
+
+.salary-block {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+  justify-content: space-between;
+}
+
+.salary-block-button {
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.salary-block-description {
+  margin-left: 15px;
+}
+
+.salary-block-value {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.salary-block-date {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.salary-block-button {
+  background-image: url(../assets/Icon.svg);
+  height: 20px;
+  width: 20px;
+  border: 0;
+  background-size: cover;
+  background-color: white;
+  cursor: pointer;
+}
